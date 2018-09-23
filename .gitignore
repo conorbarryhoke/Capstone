@@ -1,3 +1,7 @@
+# ensuring
+sample2.txt
+mykey.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
