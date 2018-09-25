@@ -40,9 +40,13 @@ YouTube offers a generic search format. By looking at random regex strings
 
  There may be some duplicates in there, so I will have to consider how to treat those. I'm fine with including the same song twice.
 
-## Attribution
+## Attribution & Reference
 1. YouTube data pull structure:   #https://towardsdatascience.com/tutorial-using-youtubes-annoying-data-api-in-python-part-1-9618beb0e7ea
 2. Very good breakout of how to structure query strings - user Sefo Noaman:
 #https://stackoverflow.com/questions/48253741/youtube-api-v3-and-python-to-generate-list-of-views-likes-on-own-youtube-videos/52484656#52484656
 3. Generic YouTube search - Sune Thorsen:
 #https://www.quora.com/Is-there-a-way-to-sort-all-YouTube-videos-by-its-view-count
+4. YouTube sample requests from publisher:
+#https://github.com/youtube/api-samples/blob/master/python/search.py
+5. YouTube Data API overview and Reference:
+#https://developers.google.com/youtube/v3/docs/
