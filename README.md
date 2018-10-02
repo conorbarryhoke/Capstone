@@ -3,8 +3,8 @@
 ## Problem Statement
 The goal of this capstone is to identify charactersitics of high view count music videos on YouTube.
 2 Part Problem statement:
-1. How can a music production company design songs and release dates to maximize views
-2. How can an advertising agency identify which songs are worth 'investing' in - if a potential hit can be identified early, they can be pro-active about ad buys
+1. How can a music production company design songs and release dates to maximize views (descriptive)
+2. How can an advertising agency identify which songs are worth 'investing' in - if a potential hit can be identified early, they can be pro-active about ad buys (predictive)
 
 Required packages:
 * pip install --upgrade google-api-python-client
@@ -14,31 +14,29 @@ Required packages:
 Google Project name: "argon-gear-217322"
 
 ## Folder guide
-Current working notebook: API_Exploration
-Current main data source: ./data/running_data_pull
+Current working notebook: ETL_Alphabet_DataPull
+Current working data source: ./data/clean_data_nocomments_noviews_02.10.18
 
 ## Data Strategy
-I'd like to hit a dataframe row count of 10,000, with a minimum of 2k to support nlk processing. Additionally, I'm looking at expanding features by incorporating google trends results and topic analysis so this would require some more data points. To maintain a good feature / observation ratio.   
+I have collected about 8500 unique records by finding everything with the Music category tag, using relevancy only.
 
-Ultimately, I'm going to be aiming for regression-based analysis to project view count.
+At present, I think this will be enough to get started on analysis. There are two remaining priorities right now:
+1. Use the YouTube Analytics API to pull in view counts by dates
+ * I can batch by weeks for each video, then collect basic stats (mean, med, mode, std. etc.) so that the data can be aggregate
+2. Collect comments around peak view dates
+* This will ensure comments are relevant (i.e. not Who else remembers this???)
 
-There are two possible paths:  
-1. Stick with videos only, (see below for expansion)
-2. Expand scope to all videos and redefine the problem. Are there features of charlie bit my finger that can be quantified? Maybe a generic hit is similar to music, maybe music is its own animal.  
+#Analysis and Modeling
+1. I expect the predictive component to revolve mainly around the following items:
+* what time of year the video is released
+* duration of the video
+* Key words in the title and tags
+* Featuring artist, if any
+2. I expect the descriptive component to be structured in the following way:
+* What things do people talk about on videos they like (topic assessment)
+* What is the level of engagement (ratio of likes / views etc.)
+* Broad commentary, such as time between major hits
 
-
-Ways to expand on music data:
-* Most viewed vevo videos of all time (estimated to add 100)
-* Country, hip hop, pop, etc. hits (feels time intensive)
-* Do some additional searching from billboard or spotify to get specific songs, artists
-* Sourt by relevance instead (probably good for another 500)
-* Branch out from artists in top scoring (would help establish non-hit basis so I'm not overfitting Psy songs, for example. probably adds 2000 records easy)
-* Look at related search terms like remix, lyric video, etc, which would also expand the discussion to identify how people look for music.
-
-Filling in 'uninteresting' data
-YouTube offers a generic search format. By looking at random regex strings
-
- There may be some duplicates in there, so I will have to consider how to treat those. I'm fine with including the same song twice.
 
 ## Attribution & Reference
 1. YouTube data pull structure:   #https://towardsdatascience.com/tutorial-using-youtubes-annoying-data-api-in-python-part-1-9618beb0e7ea
