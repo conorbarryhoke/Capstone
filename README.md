@@ -10,6 +10,7 @@ Required packages:
 * pip install --upgrade google-api-python-client
 * pip install --upgrade oauth2client
 * pip install google_auth_oauthlib
+* pip install textblob
 
 Google Project name: "argon-gear-217322"
 
