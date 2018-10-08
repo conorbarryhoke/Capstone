@@ -26,6 +26,11 @@ At present, I think this will be enough to get started on analysis. There are tw
  * I can batch by weeks for each video, then collect basic stats (mean, med, mode, std. etc.) so that the data can be aggregate
 2. Collect comments around peak view dates
 * This will ensure comments are relevant (i.e. not Who else remembers this???)
+3. View trap around 1000 that lasts till ~50,000. Search algorithm feature? 
+
+#Outsanding questions:
+* Can we identify a limit that max engagement approaches
+
 
 #Analysis and Modeling
 1. I expect the predictive component to revolve mainly around the following items:
@@ -37,6 +42,12 @@ At present, I think this will be enough to get started on analysis. There are tw
 * What things do people talk about on videos they like (topic assessment)
 * What is the level of engagement (ratio of likes / views etc.)
 * Broad commentary, such as time between major hits
+
+#Results:
+##descriptive
+* dislike same as comment rate
+* pitbull affect = 2.7
+##predictive
 
 
 ## Attribution & Reference
