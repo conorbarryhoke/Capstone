@@ -1,16 +1,27 @@
 # Capstone
 
 ## Problem Statement
-The goal of this capstone is to identify charactersitics of high view count music videos on YouTube.
-2 Part Problem statement:
-1. How can a music production company design songs and release dates to maximize views (descriptive)
-2. How can an advertising agency identify which songs are worth 'investing' in - if a potential hit can be identified early, they can be pro-active about ad buys (predictive)
 
-Required packages:
+1. How do people engage with music on YouTube?
+2. How can an artist or company describe their music to maximize potential views?
+
+## Required packages:
+### Extract, Transform, Load
 * pip install --upgrade google-api-python-client
 * pip install --upgrade oauth2client
 * pip install google_auth_oauthlib
-* pip install textblob
+* requests
+* json
+
+### Exploratory Data Analysis
+* textblob
+* wordcloud
+### Feature Engineering
+* nltk
+* re (regex)
+### Modeling
+* sklearn
+
 
 Google Project name: "argon-gear-217322"
 
@@ -26,7 +37,7 @@ At present, I think this will be enough to get started on analysis. There are tw
  * I can batch by weeks for each video, then collect basic stats (mean, med, mode, std. etc.) so that the data can be aggregate
 2. Collect comments around peak view dates
 * This will ensure comments are relevant (i.e. not Who else remembers this???)
-3. View trap around 1000 that lasts till ~50,000. Search algorithm feature? 
+3. View trap around 1000 that lasts till ~50,000. Search algorithm feature?
 
 #Outsanding questions:
 * Can we identify a limit that max engagement approaches
