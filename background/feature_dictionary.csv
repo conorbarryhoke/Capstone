@@ -1,0 +1,53 @@
+id	feature_name	description
+1	view_class	integer values (rounded) of nearest order of magnitude
+2	caption	whether or not the video has a caption
+3	definition	high def or standard def
+4	duration	length of video in seconds
+5	licensedContent	whether or not video contains licensed music
+6	regionRestriction	whether or not video is restricted in some regions
+7	contentRating	whehter or not video has a content rating (e.g. explicit lyrics)
+8	year	two digit year of upload
+9	month	month of upload
+10	month_day	day of month (1-31) of upload
+11	year_day	day of year (1-365) of upload
+12	week_day	week day (0-6) of upload
+13	week	week number of upload (0-52)
+14	description_sentiment	total sentiment of words in description
+15	description_wordcount	total space-separated words in description
+16	tags_sentiment	total sentiment of words in tag
+17	tags_wordcount	total number of tags on video (comma separated)
+18	title_sentiment	total sentiment of words in title
+19	title_wordcount	number of words in title (space separated)
+20	title_featuring	"whether or not the title contains featuring artsist (ft, feat, featuring etc)"
+21	intitle_a	number of occurences of letter in the title
+22	intitle_b	number of occurences of letter in the title
+23	intitle_c	number of occurences of letter in the title
+24	intitle_d	number of occurences of letter in the title
+25	intitle_e	number of occurences of letter in the title
+26	intitle_f	number of occurences of letter in the title
+27	intitle_g	number of occurences of letter in the title
+28	intitle_h	number of occurences of letter in the title
+29	intitle_i	number of occurences of letter in the title
+30	intitle_j	number of occurences of letter in the title
+31	intitle_k	number of occurences of letter in the title
+32	intitle_l	number of occurences of letter in the title
+33	intitle_m	number of occurences of letter in the title
+34	intitle_n	number of occurences of letter in the title
+35	intitle_o	number of occurences of letter in the title
+36	intitle_p	number of occurences of letter in the title
+37	intitle_q	number of occurences of letter in the title
+38	intitle_r	number of occurences of letter in the title
+39	intitle_s	number of occurences of letter in the title
+40	intitle_t	number of occurences of letter in the title
+41	intitle_u	number of occurences of letter in the title
+42	intitle_v	number of occurences of letter in the title
+43	intitle_w	number of occurences of letter in the title
+44	intitle_x	number of occurences of letter in the title
+45	intitle_y	number of occurences of letter in the title
+46	intitle_z	number of occurences of letter in the title
+47	title_length	total character length of title
+48	lv_ratio	ratio of likes to views (log on log)
+49	comment_view_ratio	ratio of comments to views (log on log)
+50	like_dislike_ratio	ratio of likes to dislikes (log on log)
+51	is_weekend	whether video was published on the weekend
+52	is_friday	whether video was published on a Friday

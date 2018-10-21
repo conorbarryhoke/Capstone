@@ -2,12 +2,21 @@
 
 ## Summary
 
-## Problem Statement
-
 What makes people find and click on music on YouTube? Does the way a video is posted have anything to do with how popular it gets? In parts 1-3, I try and partly succeed in predicting how big a music-type video will get. For parts 4-6, I end up pivoting to identifying the most engaging video tags, in an effort to optimize engagement per view for a potential advertiser. In the end, I try to answer the age-old question: What the hell is trap music, actually?
 
-Click <a href=https://conorbarryhoke.github.io/>here<a> for the presentation.
-A more detailed write-up on ETL through Regression is included in the background folder. 
+<a href=https://conorbarryhoke.github.io/>Click here<a> for the presentation.
+A more detailed write-up on ETL through Regression is included in the background folder.
+
+<a href=https://public.tableau.com/profile/conor.barry.hoke#!/>Tableau Profile<a> showing summary of genre and engagement metrics
+
+## Workflow
+The ultimate final outputs of this project are mainly contained in <strong>Classification_Engagement</strong>.
+
+There are two diverging paths in here. Originally, the project was an attempt to predict views, and so the Reggresion model was the final endpoint. Once this was hit, I started from the same source data and began looking at engagement by genre. The workflow looks likes this:
+
+<span><img src="https://raw.githubusercontent.com/conorbarryhoke/conorbarryhoke.github.io/master/capstone_files/assets/title_text.bmp"><span>
+
+Refer to background for feature dictionary csv.
 
 ## Required packages:
 ### Extract, Transform, Load
@@ -29,41 +38,6 @@ A more detailed write-up on ETL through Regression is included in the background
 
 Google Project name: "argon-gear-217322"
 
-## Folder guide
-Current working notebook: ETL_Alphabet_DataPull
-Current working data source: ./data/clean_data_nocomments_noviews_02.10.18
-
-## Data Strategy
-I have collected about 8500 unique records by finding everything with the Music category tag, using relevancy only.
-
-At present, I think this will be enough to get started on analysis. There are two remaining priorities right now:
-1. Use the YouTube Analytics API to pull in view counts by dates
- * I can batch by weeks for each video, then collect basic stats (mean, med, mode, std. etc.) so that the data can be aggregate
-2. Collect comments around peak view dates
-* This will ensure comments are relevant (i.e. not Who else remembers this???)
-3. View trap around 1000 that lasts till ~50,000. Search algorithm feature?
-
-#Outsanding questions:
-* Can we identify a limit that max engagement approaches
-
-
-#Analysis and Modeling
-1. I expect the predictive component to revolve mainly around the following items:
-* what time of year the video is released
-* duration of the video
-* Key words in the title and tags
-* Featuring artist, if any
-2. I expect the descriptive component to be structured in the following way:
-* What things do people talk about on videos they like (topic assessment)
-* What is the level of engagement (ratio of likes / views etc.)
-* Broad commentary, such as time between major hits
-
-#Results:
-##descriptive
-* dislike same as comment rate
-* pitbull affect = 2.7
-##predictive
-
 
 ## Attribution & Reference
 1. YouTube data pull structure:   #https://towardsdatascience.com/tutorial-using-youtubes-annoying-data-api-in-python-part-1-9618beb0e7ea
@@ -75,3 +49,5 @@ At present, I think this will be enough to get started on analysis. There are tw
 #https://github.com/youtube/api-samples/blob/master/python/search.py
 5. YouTube Data API overview and Reference:
 #https://developers.google.com/youtube/v3/docs/
+6. Website Design:
+https://github.com/BlackrockDigital/startbootstrap-resume.git
