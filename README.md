@@ -13,9 +13,9 @@ A more detailed write-up on ETL through Regression is included in the background
 ## Workflow
 The ultimate final outputs of this project are mainly contained in <strong>Classification_Engagement</strong>.
 
-There are two diverging paths in here. Originally, the project was an attempt to predict views, and so the Reggresion model was the final endpoint. Once this was hit, I started from the same source data and began looking at engagement by genre. The workflow looks likes this:
+There are two diverging paths in here. Originally, the project was an attempt to predict views, and so the Regression model was the final endpoint. Once this was hit, I started from the same source data and began looking at engagement by genre. The workflow looks likes this:
 
-<span><img src="https://raw.githubusercontent.com/conorbarryhoke/conorbarryhoke.github.io/master/capstone_files/assets/title_text.bmp"><span>
+<span><img src="https://raw.githubusercontent.com/conorbarryhoke/Capstone/master/assets/prime_workflow.bmp"><span>
 
 Refer to background for feature dictionary csv.
 
