@@ -1,9 +1,14 @@
 # ensuring API key not distributed
 sample2.txt
 mykey.txt
-workbook_archive/
 analyticskey.txt
 client_id.json
+#Archives
+workbook_archive/
+/data/Archive
+/data/classifieds/Archive
+/data/engineered_data/Archive
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
