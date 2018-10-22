@@ -1,6 +1,6 @@
 # Anatomy of a YouTube video
+Analysis of YouTube videos and genres.
 
-<p></p>
 ## Summary
 
 What makes people find and click on music on YouTube? Does the way a video is posted have anything to do with how popular it gets? In parts 1-3, I try and partly succeed in predicting how big a music-type video will get. For parts 4-6, I end up pivoting to identifying the most engaging video tags, in an effort to optimize engagement per view for a potential advertiser. In the end, I try to answer the age-old question: What the hell is trap music, actually?
@@ -17,7 +17,11 @@ There are two diverging paths in here. Originally, the project was an attempt to
 
 <span><img src="https://raw.githubusercontent.com/conorbarryhoke/Capstone/master/assets/prime_workflow.bmp"><span>
 
-Refer to background for feature dictionary csv.
+
+
+Refer to /background/ for feature dictionary csv and full workflow diagram (Supplemental Excel)
+
+
 
 To support the prime workflow, the folder structure and associated data files is as follows:
 
